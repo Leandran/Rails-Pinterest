@@ -8,7 +8,7 @@
       <%=link_to 'Pinterested',root_path, class:'navbar-brand' %>     
          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"></a>
@@ -32,13 +32,13 @@
             <li><%= link_to 'Add Pin', new_pin_path, class:"btn btn-default" %></li>
             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class:"btn btn-default"  %></li>
 
-            <% else %>
+      <% else %>
           <!-- If not logged in, then the provided options are to sign up or login  -->
 
             <li><%= link_to 'Login', new_user_session_path, class:"btn btn-default"  %></li>
             <li><%= link_to 'Join', new_user_registration_path, class:"btn btn-default"  %></li>
 
-            <% end %>
+       <% end %>
      
                
      

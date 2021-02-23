@@ -3,24 +3,26 @@
     <% @pins.each do |pin| %>
       <div class="box">
         <div class="panel panel-default">
-        <%= link_to image_tag(pin.image), pin %><br/>
+          <%= link_to image_tag(pin.image), pin %><br/>
         <div class="panel-body">
-        <%= pin.description %><br/>
-        <strong><%= pin.user.name if pin.user %></strong><br>
+          <%= pin.description %><br/>
+          <strong><%= pin.user.name if pin.user %></strong><br>
         </div>
         <div class="panel-footer">
-        <% if pin.user == current_user %>        <!-- if this this the authenticated user -->
-        <%= link_to 'Edit', edit_pin_path(pin) %><br/>
-        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>          
-        <% end %>
+          <% if pin.user == current_user %>        <!-- if this this the authenticated user -->
+            <%= link_to 'Edit', edit_pin_path(pin) %><br/>
+            <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>          
+          <% end %>
         </div>
       
-    <% end %>
+        <% end %>
  <br>
 <%= link_to 'New Pin', new_pin_path %>
       </div>
-      </div>  
+    </div>  
 </div>
+
+
 <div class="center">
 <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
 </div>
