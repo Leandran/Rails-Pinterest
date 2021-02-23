@@ -15,7 +15,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.7', '>= 4.7.3'
-
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery-rails', '~> 4.4'
+gem 'will_paginate', '~> 3.3'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

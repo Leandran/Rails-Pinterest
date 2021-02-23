@@ -5,7 +5,7 @@ class PinsController < ApplicationController
 
   # GET /pins or /pins.json
   def index
-    @pins = Pin.all  #object that is pulled from the database
+    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)  #object that is pulled from the database from newest
   end
 
   # GET /pins/1 or /pins/1.json
