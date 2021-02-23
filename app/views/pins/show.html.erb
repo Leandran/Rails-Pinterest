@@ -5,7 +5,9 @@
     <div class="panel-heading center">
       <div class="panel-heading center"><%= image_tag(@pin.image) %></div>
         <div class="panel-body">
-            <%= @pin.description %>  
+            <%= @pin.description %><br/>
+            <br/><%= @pin.user.name %><br/>
+
   
 
             <% if @pin.user == current_user %>  <!-- if the user is the same user that created the pin-->
