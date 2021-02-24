@@ -1,24 +1,9 @@
-# README
+A Pinterest type web app named Pinterested. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project completed from: https://www.amazon.com/Learn-Ruby-Rails-Web-Development/dp/0692364218.
 
-Things you may want to cover:
+Fixes while working through the book.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Used Bootstrap CDN rather than installing gem
+* Used Active storage rather than Paperclip gem as it is depracated
+* Certain methods of Devise had to be changed due to those methods falling away with Rails 4
